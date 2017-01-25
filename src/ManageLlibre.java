@@ -70,7 +70,7 @@ public class ManageLlibre {
             tx = session.beginTransaction();
             Llibre llibre = (Llibre)session.get(Llibre.class, llibre_id);
             llibre.setTítol(títol);
-            llibre.se;
+            llibre.setNombre_exemplars(nombre_exemplars);
             llibre.setEditorial( editorial );
             llibre.setNumPaginas( numPaginas );
             llibre.setAnyoEdicion( anyoEdicion );
